@@ -1,17 +1,15 @@
-# minimal-reproduction-template
-
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
-
-Then replace the current `h1` with the Renovate Issue/Discussion number.
-
 ## Current behavior
 
-Explain the current behavior here.
+PR to replace action `gradle/gradle-build-action` with `gradle/actions/setup-gradle` fails with error on `depName mismatch`
+Seems to be from https://github.com/renovatebot/renovate/blob/main/lib/workers/repository/update/branch/auto-replace.ts#L62-L76
+
+Looking at the logs, the newDepName is being truncated to "gradle/actions" instead of "gradle/actions/setup-gradle"
 
 ## Expected behavior
 
-Explain the expected behavior here.
+PR to replace action would be created. 
+Did base work on https://github.com/renovatebot/renovate/blob/main/lib/data/replacements.json#L674-L685, so this preset is probably also broken
 
 ## Link to the Renovate issue or Discussion
 
-Put your link to the Renovate issue or Discussion here.
+https://github.com/renovatebot/renovate/discussions/36634
