@@ -1,1 +1,15 @@
-{}
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+      "matchCurrentVersion": "/^v3/",
+      "matchDatasources": [
+        "github-tags"
+      ],
+      "matchPackageNames": [
+        "gradle/gradle-build-action"
+      ],
+      "replacementName": "gradle/actions/setup-gradle",
+      "replacementVersion": "v3"
+    }
+  ]
+}
