@@ -1,13 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
+    {
+      "groupName": "github-actions",
+      "matchManagers": [ "github-actions" ],
+      "minimumReleaseAge": "14 days"
+    },
+    {
       "matchCurrentVersion": "/^v3/",
-      "matchDatasources": [
-        "github-tags"
-      ],
-      "matchPackageNames": [
-        "gradle/gradle-build-action"
-      ],
+      "matchDatasources": [ "github-tags" ],
+      "matchPackageNames": [ "gradle/gradle-build-action" ],
       "replacementName": "gradle/actions/setup-gradle",
       "replacementVersion": "v3"
     }
