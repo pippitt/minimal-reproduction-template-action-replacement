@@ -3,6 +3,7 @@
   "extends": ["replacements:all"],
   "packageRules": [
     {
+      "additionalBranchPrefix": "{{depNameSanitized}}-{{updateType}}",
       "groupName": "github-actions",
       "matchManagers": [ "github-actions" ],
       "minimumReleaseAge": "14 days"
