@@ -16,13 +16,11 @@
       "replacementVersion": "v3"
     },
     {
-      "matchCurrentVersion": "/^3/",
-      "matchDatasources": [ "github-tags" ],
-      "matchPackageNames": [
-        "gradle/wrapper-validation-action"
-      ],
-      "replacementName": "gradle/actions/wrapper-validation",
-      "replacementVersion": "3.5.0"
+        "matchCurrentVersion": "/^3/",
+        "matchManagers": ["github-actions"],
+        "matchPackageNames": ["gradle/wrapper-validation-action"],
+        "replacementName": "gradle/actions/wrapper-validation",
+        "replacementVersion": "3.5.0"
     }
   ]
 }
