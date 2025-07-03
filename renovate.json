@@ -5,8 +5,7 @@
     {
       "additionalBranchPrefix": "{{depNameSanitized}}-{{updateType}}",
       "groupName": "github-actions",
-      "matchManagers": [ "github-actions" ],
-      "minimumReleaseAge": "14 days"
+      "matchManagers": [ "github-actions" ]
     },
     {
       "matchCurrentVersion": "/^v3/",
