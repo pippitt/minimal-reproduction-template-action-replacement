@@ -13,6 +13,15 @@
       "matchPackageNames": [ "gradle/gradle-build-action" ],
       "replacementName": "gradle/actions/setup-gradle",
       "replacementVersion": "v3"
+    },
+    {
+      "matchCurrentVersion": "/^3/",
+      "matchDatasources": [ "github-tags" ],
+      "matchPackageNames": [
+        "gradle/wrapper-validation-action"
+      ],
+      "replacementName": "gradle/actions/wrapper-validation",
+      "replacementVersion": "3.5.0"
     }
   ]
 }
