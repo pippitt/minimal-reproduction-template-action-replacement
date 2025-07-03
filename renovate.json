@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["replacements:all"],
+  "extends": ["includeForks:true", "replacements:all"],
   "enabledManagers": [ "github-actions" ],
   "packageRules": [
     {
