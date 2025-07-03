@@ -1,26 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["replacements:all"],
   "enabledManagers": [ "github-actions" ],
   "packageRules": [
-    {
-      "additionalBranchPrefix": "{{depNameSanitized}}-{{updateType}}",
-      "groupName": "github-actions",
-      "matchManagers": [ "github-actions" ]
-    },
     {
       "matchCurrentVersion": "/^v3/",
       "matchDatasources": [ "github-tags" ],
       "matchPackageNames": [ "gradle/gradle-build-action" ],
       "replacementName": "gradle\\/actions/setup-gradle",
       "replacementVersion": "v3"
-    },
-    {
-        "matchCurrentVersion": "/^3/",
-        "matchManagers": ["github-actions"],
-        "matchPackageNames": ["gradle/wrapper-validation-action"],
-        "replacementName": "gradle/actions/wrapper-validation",
-        "replacementVersion": "3.5.0"
     }
   ]
 }
