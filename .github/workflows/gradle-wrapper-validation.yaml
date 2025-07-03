@@ -7,4 +7,4 @@ jobs:
     steps:
       # setup build environment
       - name: Gradle wrapper validation
-        uses: gradle/wrapper-validation-action@3
+        uses: gradle/wrapper-validation-action@3.5.0
